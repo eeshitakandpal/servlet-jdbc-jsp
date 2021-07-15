@@ -12,7 +12,7 @@ public class EmployeeDao {
 		
 		Class.forName("com.mysql.jdbc.Driver");
 		
-		try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/practice","root","eeshita");
+		try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/practice", "root","eeshita");
 		
 			PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)){
 				preparedStatement.setInt(1,1);
@@ -31,6 +31,7 @@ public class EmployeeDao {
 				e.printStackTrace();
 				
 			}
+		
 			
 				
 	}
